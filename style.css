@@ -61,6 +61,7 @@ body{
 .buttons{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
 .buttons button{
@@ -73,8 +74,39 @@ body{
     border: none;
     color: var(--medium-gray);
     background-color: var(--dark-blue);
+
+    transition: all ease-in-out 0.3s;
 }
 
 .buttons button:hover{
-    
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.buttons button:focus{
+    color: var(--white);
+    background-color: var(--light-gray);
+}
+
+.card > button{
+    width: 100%;
+    padding: 13px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 22px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+
+    transition: all ease-in-out 0.3s;
+}
+
+.card > button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
 }
