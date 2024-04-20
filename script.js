@@ -1,4 +1,4 @@
-let botoes = document.querySelectorAll(".botoes button")
+let botoes = document.querySelectorAll(".buttons button")
 
 botoes.forEach(botao => {
     botao.addEventListener("click", guardarNota)
